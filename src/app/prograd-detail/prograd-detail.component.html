@@ -1,0 +1,11 @@
+<div *ngIf="selectedPrograd">
+  <h2>{{selectedPrograd.name | uppercase}} Details</h2>
+  <div>
+    <span>id: </span> {{selectedPrograd.id}}
+  </div>
+  <div>
+    <label for="">
+      name: <input type="text" [(ngModel)]="selectedPrograd.name" placeholder="name">
+    </label>
+  </div>
+</div>
